@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FC5225E1E93E7B7009A2C15 /* InsulinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC522501E93E785009A2C15 /* InsulinKit.framework */; };
+		2FC5225F1E93E7C4009A2C15 /* InsulinKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC522501E93E785009A2C15 /* InsulinKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43027F0F1DFE0EC900C51989 /* HKUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F526D5E1DF2459000A04910 /* HKUnit.swift */; };
 		4302F4E11D4E9C8900F0FCAF /* TextFieldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302F4E01D4E9C8900F0FCAF /* TextFieldTableViewController.swift */; };
 		4302F4E31D4EA54200F0FCAF /* InsulinDeliveryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302F4E21D4EA54200F0FCAF /* InsulinDeliveryTableViewController.swift */; };
@@ -99,7 +101,6 @@
 		43C0944A1CACCC73001F6403 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C094491CACCC73001F6403 /* NotificationManager.swift */; };
 		43C246A81D89990F0031F8D1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C246A71D89990F0031F8D1 /* Crypto.framework */; };
 		43C418B51CE0575200405B6A /* ShareGlucose+GlucoseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C418B41CE0575200405B6A /* ShareGlucose+GlucoseKit.swift */; };
-		43C6407C1DA051850093E25D /* InsulinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C6407B1DA051850093E25D /* InsulinKit.framework */; };
 		43CA93371CB98079000026B5 /* MinimedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CA93361CB98079000026B5 /* MinimedKit.framework */; };
 		43CB2B2B1D924D450079823D /* WCSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB2B2A1D924D450079823D /* WCSession.swift */; };
 		43CE7CDE1CA8B63E003CC1B0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE7CDD1CA8B63E003CC1B0 /* Data.swift */; };
@@ -166,7 +167,6 @@
 		4F2C15951E09BF3C00E160D4 /* HUDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C15941E09BF3C00E160D4 /* HUDView.xib */; };
 		4F2C15971E09E94E00E160D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C15961E09E94E00E160D4 /* Assets.xcassets */; };
 		4F2C159A1E0C9E5600E160D4 /* LoopUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F75288B1DFE1DC600C322D6 /* LoopUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4F526D5D1DF0FD6500A04910 /* InsulinKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43C6407B1DA051850093E25D /* InsulinKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4F526D611DF8D9A900A04910 /* NetBasal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F526D601DF8D9A900A04910 /* NetBasal.swift */; };
 		4F526D621DF9D95200A04910 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DA58D1D4AEC230097D1CA /* NSBundle.swift */; };
 		4F6663941E905FD2009E74FC /* ChartColorPalette+Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6663931E905FD2009E74FC /* ChartColorPalette+Loop.swift */; };
@@ -232,6 +232,76 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2FC5223F1E93E785009A2C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 430157F71C7EC03B00B64B63;
+			remoteInfo = "LoopKit Example";
+		};
+		2FC522411E93E785009A2C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4301580C1C7EC03B00B64B63;
+			remoteInfo = "LoopKit ExampleUITests";
+		};
+		2FC522431E93E785009A2C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FDCB1C728FDF0073BE78;
+			remoteInfo = LoopKit;
+		};
+		2FC522451E93E785009A2C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FDD51C728FDF0073BE78;
+			remoteInfo = LoopKitTests;
+		};
+		2FC522471E93E785009A2C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FE2A1C72914D0073BE78;
+			remoteInfo = CarbKit;
+		};
+		2FC522491E93E785009A2C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FE331C72914D0073BE78;
+			remoteInfo = CarbKitTests;
+		};
+		2FC5224B1E93E785009A2C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FE6F1C7293070073BE78;
+			remoteInfo = GlucoseKit;
+		};
+		2FC5224D1E93E785009A2C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FE8E1C7293C70073BE78;
+			remoteInfo = GlucoseKitTests;
+		};
+		2FC5224F1E93E785009A2C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FEB11C7294520073BE78;
+			remoteInfo = InsulinKit;
+		};
+		2FC522511E93E785009A2C15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FEBA1C7294520073BE78;
+			remoteInfo = InsulinKitTests;
+		};
 		43A943801B926B7B0051FA24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 43776F841B8022E90074EA36 /* Project object */;
@@ -305,6 +375,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2FC5225F1E93E7C4009A2C15 /* InsulinKit.framework in Embed Frameworks */,
 				4F2C159A1E0C9E5600E160D4 /* LoopUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -326,7 +397,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4F526D5D1DF0FD6500A04910 /* InsulinKit.framework in CopyFiles */,
 				43E2D9171D2226BD004DA55F /* LoopKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +415,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoopKit.xcodeproj; path = ../LoopKit/LoopKit.xcodeproj; sourceTree = "<group>"; };
 		4302F4E01D4E9C8900F0FCAF /* TextFieldTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewController.swift; sourceTree = "<group>"; };
 		4302F4E21D4EA54200F0FCAF /* InsulinDeliveryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsulinDeliveryTableViewController.swift; sourceTree = "<group>"; };
 		4302F4E41D4EA75100F0FCAF /* DoseStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoseStore.swift; sourceTree = "<group>"; };
@@ -450,7 +521,6 @@
 		43C094491CACCC73001F6403 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		43C246A71D89990F0031F8D1 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/iOS/Crypto.framework; sourceTree = "<group>"; };
 		43C418B41CE0575200405B6A /* ShareGlucose+GlucoseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShareGlucose+GlucoseKit.swift"; sourceTree = "<group>"; };
-		43C6407B1DA051850093E25D /* InsulinKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InsulinKit.framework; path = Carthage/Build/iOS/InsulinKit.framework; sourceTree = "<group>"; };
 		43CA93361CB98079000026B5 /* MinimedKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MinimedKit.framework; path = Carthage/Build/iOS/MinimedKit.framework; sourceTree = "<group>"; };
 		43CB2B2A1D924D450079823D /* WCSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCSession.swift; sourceTree = "<group>"; };
 		43CE7CDD1CA8B63E003CC1B0 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -560,8 +630,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC5225E1E93E7B7009A2C15 /* InsulinKit.framework in Frameworks */,
 				4F7528941DFE1E9500C322D6 /* LoopUI.framework in Frameworks */,
-				43C6407C1DA051850093E25D /* InsulinKit.framework in Frameworks */,
 				438A95A81D8B9B24009D12E1 /* xDripG5.framework in Frameworks */,
 				43C246A81D89990F0031F8D1 /* Crypto.framework in Frameworks */,
 				434FB6461D68F1CD007B9C70 /* Amplitude.framework in Frameworks */,
@@ -620,6 +690,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FC522331E93E785009A2C15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FC522401E93E785009A2C15 /* LoopKit Example.app */,
+				2FC522421E93E785009A2C15 /* LoopKit ExampleUITests.xctest */,
+				2FC522441E93E785009A2C15 /* LoopKit.framework */,
+				2FC522461E93E785009A2C15 /* LoopKitTests.xctest */,
+				2FC522481E93E785009A2C15 /* CarbKit.framework */,
+				2FC5224A1E93E785009A2C15 /* CarbKitTests.xctest */,
+				2FC5224C1E93E785009A2C15 /* GlucoseKit.framework */,
+				2FC5224E1E93E785009A2C15 /* GlucoseKitTests.xctest */,
+				2FC522501E93E785009A2C15 /* InsulinKit.framework */,
+				2FC522521E93E785009A2C15 /* InsulinKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4328E0121CFBE1B700E199AA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1023,7 +1110,7 @@
 		968DCD53F724DE56FFE51920 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				43C6407B1DA051850093E25D /* InsulinKit.framework */,
+				2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */,
 				438A95A71D8B9B24009D12E1 /* xDripG5.framework */,
 				434FB6451D68F1CD007B9C70 /* Amplitude.framework */,
 				43F78D481C914197002152D1 /* CarbKit.framework */,
@@ -1279,6 +1366,12 @@
 			mainGroup = 43776F831B8022E90074EA36;
 			productRefGroup = 43776F8D1B8022E90074EA36 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2FC522331E93E785009A2C15 /* Products */;
+					ProjectRef = 2FC522321E93E785009A2C15 /* LoopKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				43776F8B1B8022E90074EA36 /* Loop */,
@@ -1291,6 +1384,79 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2FC522401E93E785009A2C15 /* LoopKit Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "LoopKit Example.app";
+			remoteRef = 2FC5223F1E93E785009A2C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FC522421E93E785009A2C15 /* LoopKit ExampleUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "LoopKit ExampleUITests.xctest";
+			remoteRef = 2FC522411E93E785009A2C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FC522441E93E785009A2C15 /* LoopKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LoopKit.framework;
+			remoteRef = 2FC522431E93E785009A2C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FC522461E93E785009A2C15 /* LoopKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LoopKitTests.xctest;
+			remoteRef = 2FC522451E93E785009A2C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FC522481E93E785009A2C15 /* CarbKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CarbKit.framework;
+			remoteRef = 2FC522471E93E785009A2C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FC5224A1E93E785009A2C15 /* CarbKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CarbKitTests.xctest;
+			remoteRef = 2FC522491E93E785009A2C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FC5224C1E93E785009A2C15 /* GlucoseKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GlucoseKit.framework;
+			remoteRef = 2FC5224B1E93E785009A2C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FC5224E1E93E785009A2C15 /* GlucoseKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GlucoseKitTests.xctest;
+			remoteRef = 2FC5224D1E93E785009A2C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FC522501E93E785009A2C15 /* InsulinKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = InsulinKit.framework;
+			remoteRef = 2FC5224F1E93E785009A2C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FC522521E93E785009A2C15 /* InsulinKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = InsulinKitTests.xctest;
+			remoteRef = 2FC522511E93E785009A2C15 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		43776F8A1B8022E90074EA36 /* Resources */ = {
@@ -1385,7 +1551,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/xDripG5.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CarbKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/GlucoseKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/InsulinKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/LoopKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftCharts.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/MinimedKit.framework",
