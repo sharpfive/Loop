@@ -19,6 +19,7 @@ extension DoseStore {
         var events: [NewPumpEvent] = []
         var lastTempBasalAmount: DoseEntry?
         var title: String
+        var type: InsulinKit.PumpEventType?
 
         for event in pumpEvents {
             var dose: DoseEntry?
@@ -53,12 +54,17 @@ extension DoseStore {
                         unit: amount.unit
                     )
                 }
+            case is PrimePumpEvent:
+                // The type of the eventual PumpEvent is set through the dose. But dose is undefined in a Prime
+                type = .prime
             default:
                 break
             }
 
             title = String(describing: event.pumpEvent)
-            events.append(NewPumpEvent(date: event.date, dose: dose, isMutable: event.isMutable(), raw: event.pumpEvent.rawData, title: title))
+            
+            // The type parameter of the eventual PumpEvent is set via the dose.type, except for prime events
+            events.append(NewPumpEvent(date: event.date, dose: dose, isMutable: event.isMutable(), raw: event.pumpEvent.rawData, title: title, type: type))
         }
 
         addPumpEvents(events, completion: completionHandler)
