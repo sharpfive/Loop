@@ -513,7 +513,7 @@ final class DeviceDataManager: CarbStoreDelegate, DoseStoreDelegate {
             }
 
             remoteDataManager.nightscoutService.uploader?.reset()
-            doseStore.pumpID = pumpID
+            //doseStore.pumpID = pumpID
 
             UserDefaults.standard.pumpID = pumpID
         }
@@ -715,19 +715,19 @@ final class DeviceDataManager: CarbStoreDelegate, DoseStoreDelegate {
 
     // MARK: DoseStoreDelegate
 
-    func doseStore(_ doseStore: DoseStore, hasEventsNeedingUpload pumpEvents: [PersistedPumpEvent], fromPumpID pumpID: String, withCompletion completionHandler: @escaping (_ uploadedObjects: [NSManagedObjectID]) -> Void) {
+    func doseStore(_ doseStore: DoseStore, hasEventsNeedingUpload pumpEvents: [PersistedPumpEvent], completion: @escaping (_ uploadedObjects: [NSManagedObjectID]) -> Void) {
         guard let uploader = remoteDataManager.nightscoutService.uploader, let pumpModel = pumpState?.pumpModel else {
-            completionHandler(pumpEvents.map({ $0.objectID }))
+            completion(pumpEvents.map({ $0.objectID }))
             return
         }
 
         uploader.upload(pumpEvents, from: pumpModel) { (result) in
             switch result {
             case .success(let objects):
-                completionHandler(objects)
+                completion(objects)
             case .failure(let error):
                 self.logger.addError(error, fromSource: "NightscoutUploadKit")
-                completionHandler([])
+                completion([])
             }
         }
     }

@@ -61,6 +61,6 @@ extension DoseStore {
             events.append(NewPumpEvent(date: event.date, dose: dose, isMutable: event.isMutable(), raw: event.pumpEvent.rawData, title: title))
         }
 
-        addPumpEvents(events, completionHandler: completionHandler)
+        addPumpEvents(events, completion: completionHandler)
     }
 }
