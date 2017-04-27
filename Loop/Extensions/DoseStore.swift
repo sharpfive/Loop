@@ -19,9 +19,9 @@ extension DoseStore {
         var events: [NewPumpEvent] = []
         var lastTempBasalAmount: DoseEntry?
         var title: String
-        var type: InsulinKit.PumpEventType?
 
         for event in pumpEvents {
+            var type: InsulinKit.PumpEventType?
             var dose: DoseEntry?
 
             switch event.pumpEvent {
