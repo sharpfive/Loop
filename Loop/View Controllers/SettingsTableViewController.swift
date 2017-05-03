@@ -17,7 +17,7 @@ private let ConfigCellIdentifier = "ConfigTableViewCell"
 private let TapToSetString = NSLocalizedString("Tap to set", comment: "The empty-state text for a configuration value")
 
 
-final class SettingsTableViewController: UITableViewController, DailyValueScheduleTableViewControllerDelegate {
+final class SettingsTableViewController: UITableViewController, DailyValueScheduleTableViewControllerDelegate, BasalRatesTableViewControllerDelegate {
 
     @IBOutlet var devicesSectionTitleView: UIView!
 
@@ -461,15 +461,15 @@ final class SettingsTableViewController: UITableViewController, DailyValueSchedu
 
                 show(vc, sender: indexPath)
             case .basalRate:
-                let scheduleVC = SingleValueScheduleTableViewController()
+                let scheduleVC = BasalRatesTableViewController()
 
                 if let profile = dataManager.loopManager.basalRateSchedule {
                     scheduleVC.timeZone = profile.timeZone
                     scheduleVC.scheduleItems = profile.items
                 }
-                scheduleVC.delegate = self
+                scheduleVC.basalRateDelegate = self
                 scheduleVC.title = NSLocalizedString("Basal Rates", comment: "The title of the basal rate profile screen")
-
+                
                 show(scheduleVC, sender: sender)
             case .carbRatio:
                 let scheduleVC = DailyQuantityScheduleTableViewController()
@@ -772,6 +772,34 @@ final class SettingsTableViewController: UITableViewController, DailyValueSchedu
             default:
                 break
             }
+        }
+    }
+    
+    // MARK: BasalRatesTableViewControllerDelegate
+    
+    func basalRatesUpdateRequested(by basalRatesViewController: BasalRatesTableViewController) {
+        if let device = dataManager.rileyLinkManager.devices.first,
+            let pumpOps = device.ops {
+            pumpOps.getBasalSettings({ (basalScheduleResponse) in
+
+                switch basalScheduleResponse {
+
+                case .success(let basalReponseArray):
+
+                    // Convert to displayable type
+                    let displayableTypeArray = basalReponseArray.map{ return RepeatingScheduleValue<Double>(startTime: TimeInterval(minutes: Double($0.minutes)), value: $0.rate) }
+
+                    DispatchQueue.main.async {
+                        basalRatesViewController.scheduleItems = displayableTypeArray
+                        basalRatesViewController.tableView.reloadData()
+                        self.dailyValueScheduleTableViewControllerWillFinishUpdating(basalRatesViewController)
+                    }
+                case .failure(let error):
+                    NSLog("Error updating Basal Settings: \(String(describing: error))")
+                    break
+                
+                }
+            })
         }
     }
 }

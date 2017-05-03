@@ -1093,6 +1093,7 @@
 				43BFF0BB1E45C80600FF19A9 /* UIColor+Loop.swift */,
 				437CEEE31CDE5C0A003C8C80 /* UIImage.swift */,
 				434FF1ED1CF27EEF000DB779 /* UITableViewCell.swift */,
+				2F883FBA1EBA581A00C818D5 /* BasalScheduleData.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1161,6 +1162,7 @@
 			children = (
 				43E2D90F1D20C581004DA55F /* Info.plist */,
 				43E2D8C91D20B9E7004DA55F /* KeychainManagerTests.swift */,
+				2F883FC21EBA587500C818D5 /* BasalScheduleDataTests.swift */,
 			);
 			path = LoopTests;
 			sourceTree = "<group>";
@@ -1884,6 +1886,7 @@
 				4FB76FBB1E8C42CF00B39636 /* UIColor.swift in Sources */,
 				4F6663941E905FD2009E74FC /* ChartColorPalette+Loop.swift in Sources */,
 				4328E0351CFC0AE100E199AA /* WatchDataManager.swift in Sources */,
+				2F883FBB1EBA581A00C818D5 /* BasalScheduleData.swift in Sources */,
 				43BFF0C51E465A2D00FF19A9 /* UIColor+HIG.swift in Sources */,
 				4302F4E31D4EA54200F0FCAF /* InsulinDeliveryTableViewController.swift in Sources */,
 				437CCAE01D285C7B0075D2C3 /* ServiceAuthentication.swift in Sources */,
@@ -1974,6 +1977,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F883FC31EBA587500C818D5 /* BasalScheduleDataTests.swift in Sources */,
 				43E2D9151D20C5A2004DA55F /* KeychainManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
