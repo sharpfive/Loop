@@ -15,6 +15,14 @@
 		2F05A6F21EB275690018EA58 /* RileyLinkBLEKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F05A6CA1EB274D60018EA58 /* RileyLinkBLEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F05A6F31EB275690018EA58 /* RileyLinkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F05A6CE1EB274D60018EA58 /* RileyLinkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F05A6F41EB275690018EA58 /* NightscoutUploadKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F05A6D21EB274D60018EA58 /* NightscoutUploadKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F883FED1EBA6ED800C818D5 /* CarbKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F883FDA1EBA6EBC00C818D5 /* CarbKit.framework */; };
+		2F883FEE1EBA6ED800C818D5 /* GlucoseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F883FDE1EBA6EBC00C818D5 /* GlucoseKit.framework */; };
+		2F883FEF1EBA6ED800C818D5 /* InsulinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F883FE21EBA6EBC00C818D5 /* InsulinKit.framework */; };
+		2F883FF01EBA6ED800C818D5 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F883FD61EBA6EBC00C818D5 /* LoopKit.framework */; };
+		2F883FF11EBA6EF500C818D5 /* LoopKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F883FD61EBA6EBC00C818D5 /* LoopKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F883FF21EBA6EF500C818D5 /* CarbKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F883FDA1EBA6EBC00C818D5 /* CarbKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F883FF31EBA6EF500C818D5 /* GlucoseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F883FDE1EBA6EBC00C818D5 /* GlucoseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F883FF41EBA6EF500C818D5 /* InsulinKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F883FE21EBA6EBC00C818D5 /* InsulinKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43027F0F1DFE0EC900C51989 /* HKUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F526D5E1DF2459000A04910 /* HKUnit.swift */; };
 		4302F4E11D4E9C8900F0FCAF /* TextFieldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302F4E01D4E9C8900F0FCAF /* TextFieldTableViewController.swift */; };
 		4302F4E31D4EA54200F0FCAF /* InsulinDeliveryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302F4E21D4EA54200F0FCAF /* InsulinDeliveryTableViewController.swift */; };
@@ -107,7 +115,6 @@
 		43C246A81D89990F0031F8D1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C246A71D89990F0031F8D1 /* Crypto.framework */; };
 		43C418B51CE0575200405B6A /* ShareGlucose+GlucoseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C418B41CE0575200405B6A /* ShareGlucose+GlucoseKit.swift */; };
 		43C513191E864C4E001547C7 /* GlucoseRangeSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C513181E864C4E001547C7 /* GlucoseRangeSchedule.swift */; };
-		43C6407C1DA051850093E25D /* InsulinKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C6407B1DA051850093E25D /* InsulinKit.framework */; };
 		43CB2B2B1D924D450079823D /* WCSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CB2B2A1D924D450079823D /* WCSession.swift */; };
 		43CE7CDE1CA8B63E003CC1B0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CE7CDD1CA8B63E003CC1B0 /* Data.swift */; };
 		43CEE6E61E56AFD400CB9116 /* NightscoutUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CEE6E51E56AFD400CB9116 /* NightscoutUploader.swift */; };
@@ -137,8 +144,6 @@
 		43E2D8F51D20C0DB004DA55F /* recommend_temp_basal_start_low_end_high.json in Resources */ = {isa = PBXBuildFile; fileRef = 43E2D8EA1D20C0DB004DA55F /* recommend_temp_basal_start_low_end_high.json */; };
 		43E2D8F61D20C0DB004DA55F /* recommend_temp_basal_start_low_end_in_range.json in Resources */ = {isa = PBXBuildFile; fileRef = 43E2D8EB1D20C0DB004DA55F /* recommend_temp_basal_start_low_end_in_range.json */; };
 		43E2D9151D20C5A2004DA55F /* KeychainManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E2D8C91D20B9E7004DA55F /* KeychainManagerTests.swift */; };
-		43E2D9171D2226BD004DA55F /* LoopKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43F78D4B1C914197002152D1 /* LoopKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		43E2D9191D222759004DA55F /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F78D4B1C914197002152D1 /* LoopKit.framework */; };
 		43E3449F1B9D68E900C85C07 /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E3449E1B9D68E900C85C07 /* StatusTableViewController.swift */; };
 		43E344A41B9E1B1C00C85C07 /* NSUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E344A31B9E1B1C00C85C07 /* NSUserDefaults.swift */; };
 		43E397A31D56B9E40028E321 /* Glucose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E397A21D56B9E40028E321 /* Glucose.swift */; };
@@ -152,9 +157,6 @@
 		43F5C2DB1B92A5E1003EB13D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F5C2DA1B92A5E1003EB13D /* SettingsTableViewController.swift */; };
 		43F64DD91D9C92C900D24DC6 /* TitleSubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F64DD81D9C92C900D24DC6 /* TitleSubtitleTableViewCell.swift */; };
 		43F78D261C8FC000002152D1 /* DoseMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F78D251C8FC000002152D1 /* DoseMath.swift */; };
-		43F78D4C1C914197002152D1 /* CarbKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F78D481C914197002152D1 /* CarbKit.framework */; };
-		43F78D4D1C914197002152D1 /* GlucoseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F78D491C914197002152D1 /* GlucoseKit.framework */; };
-		43F78D4F1C914197002152D1 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F78D4B1C914197002152D1 /* LoopKit.framework */; };
 		43FCBBC21E51710B00343C1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43776F9A1B8022E90074EA36 /* LaunchScreen.storyboard */; };
 		4D3B40041D4A9E1A00BC6334 /* G4ShareSpy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3B40021D4A9DFE00BC6334 /* G4ShareSpy.framework */; };
 		4D5B7A4B1D457CCA00796CA9 /* GlucoseG4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B7A4A1D457CCA00796CA9 /* GlucoseG4.swift */; };
@@ -175,7 +177,6 @@
 		4F2C15951E09BF3C00E160D4 /* HUDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C15941E09BF3C00E160D4 /* HUDView.xib */; };
 		4F2C15971E09E94E00E160D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2C15961E09E94E00E160D4 /* Assets.xcassets */; };
 		4F2C159A1E0C9E5600E160D4 /* LoopUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F75288B1DFE1DC600C322D6 /* LoopUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4F526D5D1DF0FD6500A04910 /* InsulinKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43C6407B1DA051850093E25D /* InsulinKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4F526D611DF8D9A900A04910 /* NetBasal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F526D601DF8D9A900A04910 /* NetBasal.swift */; };
 		4F526D621DF9D95200A04910 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DA58D1D4AEC230097D1CA /* NSBundle.swift */; };
 		4F6663941E905FD2009E74FC /* ChartColorPalette+Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6663931E905FD2009E74FC /* ChartColorPalette+Loop.swift */; };
@@ -353,6 +354,104 @@
 			remoteGlobalIDString = 43C246921D8918AE0031F8D1;
 			remoteInfo = Crypto;
 		};
+		2F883FD11EBA6EBC00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 430157F71C7EC03B00B64B63;
+			remoteInfo = "LoopKit Example";
+		};
+		2F883FD31EBA6EBC00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4301580C1C7EC03B00B64B63;
+			remoteInfo = "LoopKit ExampleUITests";
+		};
+		2F883FD51EBA6EBC00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FDCB1C728FDF0073BE78;
+			remoteInfo = LoopKit;
+		};
+		2F883FD71EBA6EBC00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FDD51C728FDF0073BE78;
+			remoteInfo = LoopKitTests;
+		};
+		2F883FD91EBA6EBC00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FE2A1C72914D0073BE78;
+			remoteInfo = CarbKit;
+		};
+		2F883FDB1EBA6EBC00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FE331C72914D0073BE78;
+			remoteInfo = CarbKitTests;
+		};
+		2F883FDD1EBA6EBC00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FE6F1C7293070073BE78;
+			remoteInfo = GlucoseKit;
+		};
+		2F883FDF1EBA6EBC00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FE8E1C7293C70073BE78;
+			remoteInfo = GlucoseKitTests;
+		};
+		2F883FE11EBA6EBC00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FEB11C7294520073BE78;
+			remoteInfo = InsulinKit;
+		};
+		2F883FE31EBA6EBC00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43D8FEBA1C7294520073BE78;
+			remoteInfo = InsulinKitTests;
+		};
+		2F883FE51EBA6ECE00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D8FDCA1C728FDF0073BE78;
+			remoteInfo = LoopKit;
+		};
+		2F883FE71EBA6ECE00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D8FE291C72914D0073BE78;
+			remoteInfo = CarbKit;
+		};
+		2F883FE91EBA6ECE00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D8FE6E1C7293070073BE78;
+			remoteInfo = GlucoseKit;
+		};
+		2F883FEB1EBA6ECE00C818D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D8FEB01C7294520073BE78;
+			remoteInfo = InsulinKit;
+		};
 		43A943801B926B7B0051FA24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 43776F841B8022E90074EA36 /* Project object */;
@@ -426,6 +525,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2F883FF11EBA6EF500C818D5 /* LoopKit.framework in Embed Frameworks */,
+				2F883FF21EBA6EF500C818D5 /* CarbKit.framework in Embed Frameworks */,
+				2F883FF31EBA6EF500C818D5 /* GlucoseKit.framework in Embed Frameworks */,
+				2F883FF41EBA6EF500C818D5 /* InsulinKit.framework in Embed Frameworks */,
 				2F05A6F11EB275690018EA58 /* MinimedKit.framework in Embed Frameworks */,
 				2F05A6F21EB275690018EA58 /* RileyLinkBLEKit.framework in Embed Frameworks */,
 				2F05A6F31EB275690018EA58 /* RileyLinkKit.framework in Embed Frameworks */,
@@ -451,8 +554,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4F526D5D1DF0FD6500A04910 /* InsulinKit.framework in CopyFiles */,
-				43E2D9171D2226BD004DA55F /* LoopKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +572,7 @@
 
 /* Begin PBXFileReference section */
 		2F05A6B31EB274D60018EA58 /* RileyLink.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RileyLink.xcodeproj; path = ../rileylink_ios/RileyLink.xcodeproj; sourceTree = "<group>"; };
+		2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LoopKit.xcodeproj; path = ../LoopKit/LoopKit.xcodeproj; sourceTree = "<group>"; };
 		4302F4E01D4E9C8900F0FCAF /* TextFieldTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewController.swift; sourceTree = "<group>"; };
 		4302F4E21D4EA54200F0FCAF /* InsulinDeliveryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsulinDeliveryTableViewController.swift; sourceTree = "<group>"; };
 		4302F4E41D4EA75100F0FCAF /* DoseStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoseStore.swift; sourceTree = "<group>"; };
@@ -575,7 +677,6 @@
 		43C246A71D89990F0031F8D1 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/iOS/Crypto.framework; sourceTree = "<group>"; };
 		43C418B41CE0575200405B6A /* ShareGlucose+GlucoseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShareGlucose+GlucoseKit.swift"; sourceTree = "<group>"; };
 		43C513181E864C4E001547C7 /* GlucoseRangeSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlucoseRangeSchedule.swift; sourceTree = "<group>"; };
-		43C6407B1DA051850093E25D /* InsulinKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InsulinKit.framework; path = Carthage/Build/iOS/InsulinKit.framework; sourceTree = "<group>"; };
 		43CB2B2A1D924D450079823D /* WCSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCSession.swift; sourceTree = "<group>"; };
 		43CE7CDD1CA8B63E003CC1B0 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		43CEE6E51E56AFD400CB9116 /* NightscoutUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightscoutUploader.swift; sourceTree = "<group>"; };
@@ -622,9 +723,6 @@
 		43F5C2DA1B92A5E1003EB13D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SettingsTableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		43F64DD81D9C92C900D24DC6 /* TitleSubtitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSubtitleTableViewCell.swift; sourceTree = "<group>"; };
 		43F78D251C8FC000002152D1 /* DoseMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoseMath.swift; sourceTree = "<group>"; };
-		43F78D481C914197002152D1 /* CarbKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarbKit.framework; path = Carthage/Build/iOS/CarbKit.framework; sourceTree = "<group>"; };
-		43F78D491C914197002152D1 /* GlucoseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GlucoseKit.framework; path = Carthage/Build/iOS/GlucoseKit.framework; sourceTree = "<group>"; };
-		43F78D4B1C914197002152D1 /* LoopKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoopKit.framework; path = Carthage/Build/iOS/LoopKit.framework; sourceTree = "<group>"; };
 		43FBEDD71D73843700B21F22 /* LevelMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelMaskView.swift; sourceTree = "<group>"; };
 		4D3B40021D4A9DFE00BC6334 /* G4ShareSpy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = G4ShareSpy.framework; path = Carthage/Build/iOS/G4ShareSpy.framework; sourceTree = "<group>"; };
 		4D5B7A4A1D457CCA00796CA9 /* GlucoseG4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlucoseG4.swift; path = Loop/Models/GlucoseG4.swift; sourceTree = SOURCE_ROOT; };
@@ -686,20 +784,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F883FED1EBA6ED800C818D5 /* CarbKit.framework in Frameworks */,
+				2F883FEE1EBA6ED800C818D5 /* GlucoseKit.framework in Frameworks */,
+				2F883FEF1EBA6ED800C818D5 /* InsulinKit.framework in Frameworks */,
+				2F883FF01EBA6ED800C818D5 /* LoopKit.framework in Frameworks */,
 				2F05A6ED1EB2751D0018EA58 /* MinimedKit.framework in Frameworks */,
 				2F05A6EE1EB2751D0018EA58 /* NightscoutUploadKit.framework in Frameworks */,
 				2F05A6EF1EB2751D0018EA58 /* RileyLinkBLEKit.framework in Frameworks */,
 				2F05A6F01EB2751D0018EA58 /* RileyLinkKit.framework in Frameworks */,
 				4F7528941DFE1E9500C322D6 /* LoopUI.framework in Frameworks */,
-				43C6407C1DA051850093E25D /* InsulinKit.framework in Frameworks */,
 				438A95A81D8B9B24009D12E1 /* xDripG5.framework in Frameworks */,
 				43C246A81D89990F0031F8D1 /* Crypto.framework in Frameworks */,
 				434FB6461D68F1CD007B9C70 /* Amplitude.framework in Frameworks */,
-				43F78D4C1C914197002152D1 /* CarbKit.framework in Frameworks */,
 				4D3B40041D4A9E1A00BC6334 /* G4ShareSpy.framework in Frameworks */,
-				43F78D4D1C914197002152D1 /* GlucoseKit.framework in Frameworks */,
 				43F5C2C91B929C09003EB13D /* HealthKit.framework in Frameworks */,
-				43F78D4F1C914197002152D1 /* LoopKit.framework in Frameworks */,
 				43B371881CE597D10013C5A6 /* ShareClient.framework in Frameworks */,
 				4F08DE9B1E7BC4ED006741EA /* SwiftCharts.framework in Frameworks */,
 			);
@@ -716,7 +814,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43E2D9191D222759004DA55F /* LoopKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,6 +858,23 @@
 				2F05A6D21EB274D60018EA58 /* NightscoutUploadKit.framework */,
 				2F05A6D41EB274D60018EA58 /* NightscoutUploadKitTests.xctest */,
 				2F05A6D61EB274D60018EA58 /* Crypto.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F883FC51EBA6EBC00C818D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F883FD21EBA6EBC00C818D5 /* LoopKit Example.app */,
+				2F883FD41EBA6EBC00C818D5 /* LoopKit ExampleUITests.xctest */,
+				2F883FD61EBA6EBC00C818D5 /* LoopKit.framework */,
+				2F883FD81EBA6EBC00C818D5 /* LoopKitTests.xctest */,
+				2F883FDA1EBA6EBC00C818D5 /* CarbKit.framework */,
+				2F883FDC1EBA6EBC00C818D5 /* CarbKitTests.xctest */,
+				2F883FDE1EBA6EBC00C818D5 /* GlucoseKit.framework */,
+				2F883FE01EBA6EBC00C818D5 /* GlucoseKitTests.xctest */,
+				2F883FE21EBA6EBC00C818D5 /* InsulinKit.framework */,
+				2F883FE41EBA6EBC00C818D5 /* InsulinKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1172,15 +1286,12 @@
 		968DCD53F724DE56FFE51920 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */,
 				2F05A6B31EB274D60018EA58 /* RileyLink.xcodeproj */,
 				434FB6451D68F1CD007B9C70 /* Amplitude.framework */,
-				43F78D481C914197002152D1 /* CarbKit.framework */,
 				43C246A71D89990F0031F8D1 /* Crypto.framework */,
 				4D3B40021D4A9DFE00BC6334 /* G4ShareSpy.framework */,
-				43F78D491C914197002152D1 /* GlucoseKit.framework */,
 				43F5C2C81B929C09003EB13D /* HealthKit.framework */,
-				43C6407B1DA051850093E25D /* InsulinKit.framework */,
-				43F78D4B1C914197002152D1 /* LoopKit.framework */,
 				4F70C1DD1DE8DCA7006380B7 /* NotificationCenter.framework */,
 				43B371871CE597D10013C5A6 /* ShareClient.framework */,
 				4346D1EF1C781BEA00ABAFE3 /* SwiftCharts.framework */,
@@ -1218,6 +1329,10 @@
 			buildRules = (
 			);
 			dependencies = (
+				2F883FE61EBA6ECE00C818D5 /* PBXTargetDependency */,
+				2F883FE81EBA6ECE00C818D5 /* PBXTargetDependency */,
+				2F883FEA1EBA6ECE00C818D5 /* PBXTargetDependency */,
+				2F883FEC1EBA6ECE00C818D5 /* PBXTargetDependency */,
 				2F05A6D91EB275140018EA58 /* PBXTargetDependency */,
 				2F05A6DB1EB275140018EA58 /* PBXTargetDependency */,
 				2F05A6DD1EB275140018EA58 /* PBXTargetDependency */,
@@ -1432,6 +1547,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 2F883FC51EBA6EBC00C818D5 /* Products */;
+					ProjectRef = 2F883FC41EBA6EBC00C818D5 /* LoopKit.xcodeproj */;
+				},
+				{
 					ProductGroup = 2F05A6B41EB274D60018EA58 /* Products */;
 					ProjectRef = 2F05A6B31EB274D60018EA58 /* RileyLink.xcodeproj */;
 				},
@@ -1525,6 +1644,76 @@
 			fileType = wrapper.framework;
 			path = Crypto.framework;
 			remoteRef = 2F05A6D51EB274D60018EA58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F883FD21EBA6EBC00C818D5 /* LoopKit Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "LoopKit Example.app";
+			remoteRef = 2F883FD11EBA6EBC00C818D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F883FD41EBA6EBC00C818D5 /* LoopKit ExampleUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "LoopKit ExampleUITests.xctest";
+			remoteRef = 2F883FD31EBA6EBC00C818D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F883FD61EBA6EBC00C818D5 /* LoopKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LoopKit.framework;
+			remoteRef = 2F883FD51EBA6EBC00C818D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F883FD81EBA6EBC00C818D5 /* LoopKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LoopKitTests.xctest;
+			remoteRef = 2F883FD71EBA6EBC00C818D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F883FDA1EBA6EBC00C818D5 /* CarbKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CarbKit.framework;
+			remoteRef = 2F883FD91EBA6EBC00C818D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F883FDC1EBA6EBC00C818D5 /* CarbKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CarbKitTests.xctest;
+			remoteRef = 2F883FDB1EBA6EBC00C818D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F883FDE1EBA6EBC00C818D5 /* GlucoseKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GlucoseKit.framework;
+			remoteRef = 2F883FDD1EBA6EBC00C818D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F883FE01EBA6EBC00C818D5 /* GlucoseKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GlucoseKitTests.xctest;
+			remoteRef = 2F883FDF1EBA6EBC00C818D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F883FE21EBA6EBC00C818D5 /* InsulinKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = InsulinKit.framework;
+			remoteRef = 2F883FE11EBA6EBC00C818D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F883FE41EBA6EBC00C818D5 /* InsulinKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = InsulinKitTests.xctest;
+			remoteRef = 2F883FE31EBA6EBC00C818D5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1621,10 +1810,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/xDripG5.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/CarbKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/GlucoseKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/InsulinKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/LoopKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftCharts.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Amplitude.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ShareClient.framework",
@@ -1877,6 +2062,26 @@
 			isa = PBXTargetDependency;
 			name = Crypto;
 			targetProxy = 2F05A6E01EB275140018EA58 /* PBXContainerItemProxy */;
+		};
+		2F883FE61EBA6ECE00C818D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoopKit;
+			targetProxy = 2F883FE51EBA6ECE00C818D5 /* PBXContainerItemProxy */;
+		};
+		2F883FE81EBA6ECE00C818D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CarbKit;
+			targetProxy = 2F883FE71EBA6ECE00C818D5 /* PBXContainerItemProxy */;
+		};
+		2F883FEA1EBA6ECE00C818D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GlucoseKit;
+			targetProxy = 2F883FE91EBA6ECE00C818D5 /* PBXContainerItemProxy */;
+		};
+		2F883FEC1EBA6ECE00C818D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InsulinKit;
+			targetProxy = 2F883FEB1EBA6ECE00C818D5 /* PBXContainerItemProxy */;
 		};
 		43A943811B926B7B0051FA24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
